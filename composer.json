@@ -1,0 +1,18 @@
+{
+  "name": "lakipay/lakipay-php-sdk",
+  "description": "Official PHP SDK for integrating with the Lakipay payment API.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Lakipay\\SDK\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "guzzlehttp/guzzle": "^7.0",
+    "ext-json": "*",
+    "ext-openssl": "*"
+  }
+}
+
