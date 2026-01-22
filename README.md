@@ -1,4 +1,4 @@
-# Lakipay PHP SDK (`lakipay-php-sdk`)
+# Lakipay PHP SDK 
 
 PHP SDK for integrating with the **Lakipay core payment API** from your backend applications.
 
