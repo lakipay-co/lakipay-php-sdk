@@ -74,9 +74,9 @@ $sdk = new LakipaySDK(
 
 try {
     $resp = $sdk->payments->createDirectPayment(
-        amount: 20.0,
+        amount: 100.0,
         currency: 'ETB',
-        phoneNumber: '251923790730',
+        phoneNumber: '2519XXXXXXXX',
         medium: 'TELEBIRR',
         reference: 'PHPTEST-' . bin2hex(random_bytes(4)),
         description: 'PHP SDK test payment',
@@ -97,9 +97,9 @@ try {
 
 ```php
 $resp = $sdk->payments->createWithdrawal(
-    amount: 1.0,
+    amount: 100.0,
     currency: 'ETB',
-    phoneNumber: '251923790730',
+    phoneNumber: '2519XXXXXXXX',
     medium: 'CBE',
     reference: 'PHPWD-' . bin2hex(random_bytes(4)),
     callbackUrl: 'https://example.com/webhook',
@@ -112,7 +112,7 @@ $resp = $sdk->payments->createWithdrawal(
 $resp = $sdk->payments->createHostedCheckout(
     amount: 100.0,
     currency: 'ETB',
-    phoneNumber: '251923790730',
+    phoneNumber: '2519XXXXXXXX',
     reference: 'PHPHOST-' . bin2hex(random_bytes(4)),
     redirects: [
         'success' => 'https://example.com/success',
